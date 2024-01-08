@@ -144,7 +144,7 @@ final class MovieQuizViewController: UIViewController {
         
         let action = UIAlertAction(title: "Этот раунд окончен!", style: .default) { _ in
            self.currentQuestionIndex = 0
-           //self.correctAnswer = 0
+           self.correctAnswers = 0
             
             let firstQuestion = self.questions[self.currentQuestionIndex]
             let viewModel = self.convert(model: firstQuestion)
